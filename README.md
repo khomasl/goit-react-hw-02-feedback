@@ -31,4 +31,4 @@ preview
 
 preview
 
-© 2021 GitHub, Inc.
+© 2021 GitHub, Inc
