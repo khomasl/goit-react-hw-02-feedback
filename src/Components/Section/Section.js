@@ -4,10 +4,14 @@ import { Statistics } from '../Statistics/Statistics'
 import { FeedbackOptions } from '../FeedbackOptions/FeedbackOptions'
 
 export function Section({ title, options }) {
+  const btnNames = ['Good', 'Neutral', 'Bad']
   return (
     <section className={s.statistics}>
       {<h2 className={s.title}>{title}</h2>}
-      <FeedbackOptions onLeaveFeedback={options.handleLeaveFeedback} />
+      <FeedbackOptions
+        btnNames={btnNames}
+        onLeaveFeedback={options.handleLeaveFeedback}
+      />
       <Statistics options={options} />
     </section>
   )
